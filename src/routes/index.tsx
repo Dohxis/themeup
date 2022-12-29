@@ -1,4 +1,4 @@
-import { json } from "@remix-run/node";
+import { json } from "@remix-run/server-runtime";
 import { Link, useLoaderData } from "@remix-run/react";
 import { AccountButton } from "src/components/Account/AccountButton";
 import { AnnouncementBar } from "src/components/AnnouncementBar/AnnouncementBar";
