@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import React from "react";
 import type { ProductInterface } from "src/data/products";
 import type { ClassNameType } from "src/library/ClassNames";
@@ -29,7 +30,7 @@ export const SectionFeaturedProducts: React.FunctionComponent<
     >
       <div className="grid grid-cols-4 gap-2">
         {products.map((product) => (
-          <div key={product.id}>
+          <Link key={product.id} to={`/products/${product.id}`}>
             <img
               src={product.imageUrl}
               alt={product.name}
@@ -37,7 +38,7 @@ export const SectionFeaturedProducts: React.FunctionComponent<
             />
             <h3>{product.name}</h3>
             <span className="text-sm font-light">{product.price}€</span>
-          </div>
+          </Link>
         ))}
       </div>
     </Layout.Section>

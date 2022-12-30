@@ -140,15 +140,6 @@ export default function Index() {
           <Footer.Item href="#">Twitter</Footer.Item>
         </Footer.Column>
       </Footer.Root>
-
-      {/* 
-      <main className="py-16">
-        <FeaturedCollection
-          title="Obsessive Attention. Intelligent Effort."
-          description="Functional handbags made of luxurious materials to improve people's lives in small but mighty ways."
-          products={products}
-        />
-      </main> */}
     </Layout.Root>
   );
 }
