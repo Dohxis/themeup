@@ -30,7 +30,11 @@ export const SectionFeaturedProducts: React.FunctionComponent<
     >
       <div className="grid grid-cols-4 gap-2">
         {products.map((product) => (
-          <Link key={product.id} to={`/products/${product.id}`}>
+          <Link
+            key={product.id}
+            to={`/products/${product.id}`}
+            prefetch="intent"
+          >
             <img
               src={product.imageUrl}
               alt={product.name}
